@@ -1,0 +1,125 @@
+/* Reset default margins and center everything */
+body {
+  background-color: rgb(232, 232, 210);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+}
+
+/* Main card section */
+.container {
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h1 {
+  color: #462301;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.h2-box{
+  color: #462301;
+  font-weight: bolder;
+}
+
+h2 {
+  color: #7a4f2d;
+  font-style: italic;
+  margin-top: 0;
+}
+
+/* Image styling */
+img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  border-radius: 6px;
+}
+
+img:hover {
+  transform: scale(0.95);
+}
+
+/* Paragraphs */
+p {
+  color: #462301;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Button styling */
+button {
+  background-color: #462301;
+  color: beige;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: beige;
+  color: #462301;
+  font-size: 21px;
+  font-weight: 600;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* About section */
+.about {
+  margin: 50px auto;
+  background-color: transparent;
+  padding: 40px;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.about-box{
+    color: #462301;
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  color: #462301;
+  font-size: 14px;
+}
+
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply to sections */
+.container, .about {
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+/* Add a little delay to 'about' so it appears after container */
+.about {
+  animation-delay: 0.5s;
+}
+
+
+button {
+  animation: fadeInUp 1s ease-out 0.8s forwards;
+  opacity: 0;
+}
